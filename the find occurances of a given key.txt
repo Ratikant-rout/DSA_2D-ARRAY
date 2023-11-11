@@ -1,0 +1,27 @@
+import java.util.ArrayList;
+import java.util.Collections;
+
+public class studyopedia{
+
+   //function to calculate count occcurance//
+     static int countOccurances(ArrayList<Integer>clist,int key)
+   {
+       //returing frequency of// 
+       //element key in the array list//
+       //using collections.frequency()method//
+     
+    return Collections.frequency(clist,key );
+   }
+    public static void main(String args[])
+   {
+     int arr[]={4,7,6,7,8,9};
+     int key=7;
+   ArrayList<Integer>clist = new ArrayList<>();
+     
+   for(int i:arr)
+     clist.add(i);
+  
+ System.out.println(key +" occurs " + countOccurances(clist,key)
+                      +" times");
+  }
+}
